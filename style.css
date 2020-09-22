@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Tammudu 2', sans-serif;
+}
+.container {
+  display: flex;
+}
+.sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 15px;
+  border-right: 1px solid #15151512;
+  position: sticky;
+  top: 0;
+}
+.sidebar .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+button.addNote, button {
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 20px 0 0 0;
+  box-shadow: 0 0 10px #1515151a;
+  cursor: pointer;
+}
+button.addNote {
+  background-color: #151515;
+}
+button.yellow {
+  background-color: #FFC976;
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
+}
+button.orange {
+  background-color: #FE9C75;
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
+}
+button.purple {
+  background-color: #B693F8;
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
+}
+button.green {
+  background-color: #E4EF93;
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
+}
+button.blue {
+  background-color: #00D4FA;
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
+}
+.navbar .action {
+  position: relative;
+  color: #151515;
+}
+.iconSearch {
+  margin: 0;
+  position: absolute;
+  padding: 0 0 0 50px;
+  line-height: 76px;
+  font-size: 18px;
+  color: #151515a8;
+}
+.navbar #search {
+  width: 100%;
+  height: 62px;
+  border: none;
+  padding: 0 0 0 80px;
+  color: #151515a8;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+h1.title {
+  margin: 30px 0 0 50px;
+}
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 40px 0;
+  transition: .5 all ease;
+  margin-bottom: 20px;
+}
+.notes .note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.note .actions {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 20px;
+  right: 20px;
+}
+.note .edit {
+  background: #151515;
+  min-width: 30px;
+  min-height: 30px;
+  color: #fff;
+}
+.note .save {
+  background-color: #151515;
+  width: min-content;
+  padding: 0 20px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.yellow {
+  background-color: #FFC976;
+}
+.orange {
+  background-color: #FE9C75;
+}
+.purple {
+  background-color: #B693F8;
+}
+.green {
+  background-color: #E4EF93;
+}
+.blue {
+  background-color: #00D4FA;
+}
